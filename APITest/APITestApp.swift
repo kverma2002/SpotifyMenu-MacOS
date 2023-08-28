@@ -6,12 +6,32 @@
 //
 
 import SwiftUI
+import SpotifyWebAPI
+import Cocoa
+import KeyboardShortcuts
+
 
 @main
 struct APITestApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+    
+    @NSApplicationDelegateAdaptor var Appdel: AppDelegate
+    
+    //@StateObject var vm = SpotifyDriver()
+    
+    init() {
+        //SpotifyAPILogHandler.bootstrap()
     }
+    
+    var body: some Scene {
+        Settings {
+            EmptyView()
+        }
+        
+        
+    }
+
+    
+    
 }
+
+
