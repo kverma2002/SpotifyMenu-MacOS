@@ -16,7 +16,7 @@ final class SpotifyDriver: ObservableObject {
     
     let spotify = SpotifyAPI(
         authorizationManager: AuthorizationCodeFlowPKCEManager (
-            clientId: "481c96d7c7c04f3e8b8c246a0368e5a1"
+            clientId: "Your client id"
         )
     )
     //
@@ -46,7 +46,7 @@ final class SpotifyDriver: ObservableObject {
         self.codeChallenge = String.makeCodeChallenge(codeVerifier: codeVerifier)
         self.state = String.randomURLSafe(length: 128)
         self.authorizationURL = spotify.authorizationManager.makeAuthorizationURL(
-            redirectURI: URL(string: "https://www.google.com")!,
+            redirectURI: URL(string: "redirect-url")!,
             codeChallenge: codeChallenge,
             state: state,
             scopes: [
@@ -70,29 +70,7 @@ final class SpotifyDriver: ObservableObject {
     
     func PopulateQueue() {
         if (self.authrorized) {
-            
-//            var componenets = URLComponents()
-//            componenets.scheme = "https"
-//            componenets.host = APIConstants.apiHost
-//            componenets.path = "/v1/me/player/queue"
-//
-//            guard let url = componenets.url else { return }
-//
-//            var urlRequest = URLRequest(url: url)
-//            urlRequest.addValue("Bearer " + self.accessToken, forHTTPHeaderField: "Authorization")
-//            urlRequest.addValue("applications/json", forHTTPHeaderField: "Content-Type")
-//            urlRequest.httpMethod = "GET"
-//            print(self.codeVerifier)
-//            Task {
-//                URLSession.shared.dataTask(with:urlRequest) { (data, response, err) in
-//                    print(urlRequest)
-//                    guard let data = data else {return}
-//                    let dataAsString = String(data: data, encoding: .utf8)
-//                    print(dataAsString)
-//                }
-//                .resume()
-  
-            
+           
         }
         
     }
