@@ -1,10 +1,11 @@
 # Spotify Mac Menu Version .1b
 
-Annoyed by scrolling through screens to get to Spotify. Pull up a Menu of it directly over your screen
+Annoyed by scrolling through screens to get to Spotify. Pull up a menu of it directly over your screen!
 
 
 
-https://github.com/kverma2002/SpotifyMenu-MacOS/assets/89934433/683da5fd-45d1-406d-807b-d9ea45b050f3
+https://github.com/kverma2002/SpotifyMenu-MacOS/assets/89934433/cbaa83b2-77f6-46f2-9000-6e1081a9251c
+
 
 
 ## Description
